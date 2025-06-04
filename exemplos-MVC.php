@@ -17,7 +17,8 @@ class ControladorProdutos
     // lista todos os produtos
     public function index() {
         $produtos = Produto::all(); // Consulta o Modelo
-        return view('produtos.index', ['produtos' => $produtos]); // Passa dados para a View
+        // Simula a função view para este exemplo
+        return $this->renderView('produtos.index', ['produtos' => $produtos]); // Passa dados para a View
     }
 }
 
