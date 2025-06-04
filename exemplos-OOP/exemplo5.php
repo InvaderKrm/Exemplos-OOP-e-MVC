@@ -24,11 +24,10 @@ class Robo implements Comunicavel {
     }
     
     public function falar() {
-        echo "{$this->modelo}: Bip-bop!\n";
+        echo "{$this->modelo}: Bip-bop! Reconhecimento de voz ativado.\n";
     }
 }
 
-// Função que usa qualquer objeto Comunicavel
 function conversar(Comunicavel $comunicante) {
     $comunicante->falar();
 }
